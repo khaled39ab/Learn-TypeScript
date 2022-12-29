@@ -1,2 +1,3 @@
 let user = 'World';
-console.log(user);
+let message = "Hello"
+console.log(message, user);
