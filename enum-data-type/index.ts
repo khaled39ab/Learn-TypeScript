@@ -1,4 +1,4 @@
-// enum -> help to store constants in typescript and no duplicate data
+// enum -> help to store constants in typescript and store no duplicate data
 
 /*  
 enum are 3 type. 
@@ -26,8 +26,17 @@ enum requestType2 {
     deleteData = 'DELETE_DATA'
 }
 
-console.log(requestType2);
-console.log(requestType2.deleteData);
-console.log(requestType2['readData']);
+// console.log(requestType2);
+// console.log(requestType2.deleteData);
+// console.log(requestType2['readData']);
 
 
+// Heterogeneous enum
+enum requestType3 {
+    readData = 'READ_DATA',
+    deleteData = 'DELETE_DATA',
+    id = 1001
+}
+
+console.log(requestType3);
+console.log(requestType3.id);
