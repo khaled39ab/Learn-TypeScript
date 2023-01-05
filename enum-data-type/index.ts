@@ -16,4 +16,18 @@ enum requestType {
     deleteData
 }
 
-console.log(requestType)
+// console.log(requestType)
+// console.log(requestType.getData)
+
+
+// string enum
+enum requestType2 {
+    readData = 'READ_DATA',
+    deleteData = 'DELETE_DATA'
+}
+
+console.log(requestType2);
+console.log(requestType2.deleteData);
+console.log(requestType2['readData']);
+
+
