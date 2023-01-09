@@ -1,4 +1,5 @@
 // typescript class object
+// In TypeScript, the class keyword provides a more familiar syntax for generating constructor functions and performing simple inheritance. 
 var User = /** @class */ (function () {
     function User(userName, age) {
         this.userName = userName;
