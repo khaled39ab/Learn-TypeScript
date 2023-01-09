@@ -1,3 +1,4 @@
+// typescript class object
 var User = /** @class */ (function () {
     function User(userName, age) {
         this.userName = userName;

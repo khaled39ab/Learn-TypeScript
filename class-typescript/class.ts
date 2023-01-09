@@ -1,3 +1,5 @@
+// typescript class object
+
 class User {
     // properties, methods, constructor
     userName: string;
