@@ -24,5 +24,4 @@ class User {
   let user2 = new User("Rakibul Islam", 31);
   user2.display();
 
-  var user3 = new User("Hasib", 12);
-user3.display();
+  
