@@ -1,5 +1,6 @@
+// inheritance helps us to acquire properties of one class to another
+
 class User {
-    // properties, methods, constructor
     userName: string;
     age: number;
 
