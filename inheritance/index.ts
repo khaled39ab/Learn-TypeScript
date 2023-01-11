@@ -32,3 +32,9 @@ student1.display();
 
 let student2 = new Student(123423423, "Aziz", 28);
 student2.display();
+
+let user1 = new User ('Emamul', 24)
+user1.display();
+
+let user2 = new User("Labib", 19);
+user2.display();

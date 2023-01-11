@@ -39,3 +39,7 @@ var student1 = new Student(1302020015, "keya", 31);
 student1.display();
 var student2 = new Student(123423423, "Aziz", 28);
 student2.display();
+var user1 = new User('Emamul', 24);
+user1.display();
+var user2 = new User("Labib", 19);
+user2.display();
