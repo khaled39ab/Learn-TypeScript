@@ -25,17 +25,17 @@ var User = /** @class */ (function () {
 }());
 var Student = /** @class */ (function (_super) {
     __extends(Student, _super);
-    function Student(userName, age, studentId) {
+    function Student(studentId, userName, age) {
         var _this = _super.call(this, userName, age) || this;
         _this.studentId = studentId;
         return _this;
     }
     Student.prototype.display = function () {
-        console.log("username: ".concat(this.userName, ", age: ").concat(this.age, ", id: ").concat(this.studentId));
+        console.log("username: id: ".concat(this.studentId, ", ").concat(this.userName, ", age: ").concat(this.age));
     };
     return Student;
 }(User));
-var user1 = new User("Saiful Islam", 25);
-user1.display();
-var user2 = new User("Rakibul Islam", 31);
-user2.display();
+var student1 = new Student(1302020015, "keya", 31);
+student1.display();
+var student2 = new Student(123423423, "Aziz", 28);
+student2.display();

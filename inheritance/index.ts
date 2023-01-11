@@ -16,19 +16,19 @@ class User {
 class Student extends User {
     studentId: number;
 
-    constructor(userName: string, age: number, studentId: number) {
+    constructor(studentId: number, userName: string, age: number) {
         super(userName, age);
         this.studentId = studentId;
     }
     display(): void {
         console.log(
-            `username: ${this.userName}, age: ${this.age}, id: ${this.studentId}`
+            `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
         );
     }
 }
 
-let user1 = new User("Saiful Islam", 25);
-user1.display();
+let student1 = new Student( 1302020015, "keya", 31,);
+student1.display();
 
-let user2 = new User("Rakibul Islam", 31);
-user2.display();
+let student2 = new Student(123423423, "Aziz", 28);
+student2.display();
