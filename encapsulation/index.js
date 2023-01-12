@@ -15,6 +15,47 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 // Access modifiers: public, private, protected, readonly
+//---------------------------------------------------------
+/*
+// public modifier example
+
+class User {
+    public userName: string;
+    public age: number;
+
+    constructor(userName: string, age: number) {
+        this.userName = userName;
+        this.age = age;
+    }
+
+    display(): void {
+        console.log(`username: ${this.userName}, age: ${this.age}`);
+    }
+}
+
+class Student extends User {
+    studentId: number;
+
+    constructor(studentId: number, userName: string, age: number) {
+        super(userName, age);
+        this.studentId = studentId;
+    }
+    display(): void {
+        console.log(
+            `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
+        );
+    }
+}
+
+let student1 = new Student( 1302020015, "keya", 31,);
+student1.display();
+
+let user1 = new User ('Emamul', 24)
+user1.display();
+
+*/
+//-------------------------------------------------------
+// *********************  public modifier example  *******************************
 var User = /** @class */ (function () {
     function User(userName, age) {
         this.userName = userName;
@@ -37,7 +78,7 @@ var Student = /** @class */ (function (_super) {
     };
     return Student;
 }(User));
-var student1 = new Student(1302020015, "keya", 31);
-student1.display();
 var user1 = new User('Emamul', 24);
-user1.display();
+// user1.userName; //Error
+// user1.display();
+// Error: can't access coz userName is protected but in class or inherit object it is accessible 
