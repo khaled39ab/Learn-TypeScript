@@ -24,7 +24,11 @@ class Student extends User {
         super(userName, age);
         this.studentId = studentId;
     }
-    
+    display(): void {
+        console.log(
+            `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
+        );
+    }
 }
 
 let student1 = new Student( 1302020015, "keya", 31,);
