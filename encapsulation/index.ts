@@ -2,11 +2,9 @@
 
 // Access modifiers: public, private, protected, readonly
 
-// inheritance helps us to acquire properties of one class to another
-
 class User {
-    userName: string;
-    age: number;
+    public userName: string;
+    public age: number;
 
     constructor(userName: string, age: number) {
         this.userName = userName;
