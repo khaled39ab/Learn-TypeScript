@@ -86,7 +86,8 @@ let user1 = new User ('Emamul', 24)
 
 // *********************  private modifier example  *******************************
 class User {
-    private userName: string;
+    // private userName: string;
+    public userName: string;
     public age: number;
 
     constructor(userName: string, age: number) {
@@ -94,29 +95,40 @@ class User {
         this.age = age;
     }
 
-    private display(): void {
+    display(): void {
         console.log(`username: ${this.userName}, age: ${this.age}`);
     }
 }
 
 class Student extends User {
-    studentId: number;
+    private studentId: number;
 
     constructor(studentId: number, userName: string, age: number) {
         super(userName, age);
         this.studentId = studentId;
     }
+    //(If userName is private)
+
     // display(): void {
     //     console.log(
     //         `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
     //     );
     // }
     // Error: coz display method is private. It's not accessible even extends class
+
+    display(): void {
+        console.log(
+            `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
+        );
+    }
 }
 
-let user1 = new User ('Emamul', 24)
+// let user1 = new User ('Emamul', 24)
 // user1.userName; //Error
 // user1.display();
 
 // Error: can't access coz userName is private. it's not accessible or modify. 
+
+let student1 = new Student(1201201, "Habib", 20);
+student1.display()
 

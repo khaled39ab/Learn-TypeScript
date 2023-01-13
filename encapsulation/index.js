@@ -109,12 +109,21 @@ var Student = /** @class */ (function (_super) {
         _this.studentId = studentId;
         return _this;
     }
+    //(If userName is private)
+    // display(): void {
+    //     console.log(
+    //         `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
+    //     );
+    // }
+    // Error: coz display method is private. It's not accessible even extends class
     Student.prototype.display = function () {
         console.log("username: id: ".concat(this.studentId, ", ").concat(this.userName, ", age: ").concat(this.age));
     };
     return Student;
 }(User));
-var user1 = new User('Emamul', 24);
+// let user1 = new User ('Emamul', 24)
 // user1.userName; //Error
 // user1.display();
-// Error: can't access coz userName is protected but in class or inherit object it is accessible 
+// Error: can't access coz userName is private. it's not accessible or modify. 
+var student1 = new Student(1201201, "Habib", 20);
+student1.display();
