@@ -140,3 +140,40 @@ student3.setStudentId3(120111);
 console.log(student3.getStudentId3());
 student3.display3();
 
+
+// *********************  readonly modifier example  *******************************
+
+class User4 {
+    readonly userName4: string;
+    public age4: number;
+
+    constructor(userName4: string, age4: number) {
+        this.userName4 = userName4;
+        this.age4 = age4;
+    }
+
+    display4(): void {
+        console.log(`username4: ${this.userName4}, age4: ${this.age4}`);
+    }
+}
+
+class Student4 extends User4 {
+    studentId4: number;
+
+    constructor(userName4: string, age4: number, studentId4: number) {
+        super(userName4, age4);
+        this.studentId4 = studentId4;
+    }
+    display4(): void {
+        console.log(
+            `username4: ${this.userName4}, age: ${this.age4}, id: ${this.studentId4}`
+        );
+    }
+}
+
+let user4 = new User4("robi", 23);
+//   user4.userName4= 'Robi'
+// Error: Cannot assign to 'userName4' because it is a read-only property.
+console.log(user4.userName4);
+
+// Can access to 'userName4' but cannot modify because it is a read-only property.

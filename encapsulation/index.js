@@ -116,3 +116,31 @@ var student3 = new Student3(1201201, "Habib", 20);
 student3.setStudentId3(120111);
 console.log(student3.getStudentId3());
 student3.display3();
+// *********************  readonly modifier example  *******************************
+var User4 = /** @class */ (function () {
+    function User4(userName4, age4) {
+        this.userName4 = userName4;
+        this.age4 = age4;
+    }
+    User4.prototype.display4 = function () {
+        console.log("username4: ".concat(this.userName4, ", age4: ").concat(this.age4));
+    };
+    return User4;
+}());
+var Student4 = /** @class */ (function (_super) {
+    __extends(Student4, _super);
+    function Student4(userName4, age4, studentId4) {
+        var _this = _super.call(this, userName4, age4) || this;
+        _this.studentId4 = studentId4;
+        return _this;
+    }
+    Student4.prototype.display4 = function () {
+        console.log("username4: ".concat(this.userName4, ", age: ").concat(this.age4, ", id: ").concat(this.studentId4));
+    };
+    return Student4;
+}(User4));
+var user4 = new User4("robi", 23);
+//   user4.userName4= 'Robi'
+// Error: Cannot assign to 'userName4' because it is a read-only property.
+console.log(user4.userName4);
+// Can access to 'userName4' but cannot modify because it is a read-only property.
