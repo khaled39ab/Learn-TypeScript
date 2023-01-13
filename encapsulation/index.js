@@ -119,6 +119,13 @@ var Student = /** @class */ (function (_super) {
     Student.prototype.display = function () {
         console.log("username: id: ".concat(this.studentId, ", ").concat(this.userName, ", age: ").concat(this.age));
     };
+    // how to access or modify with private property
+    Student.prototype.setStudentId = function (id) {
+        this.studentId = id;
+    };
+    Student.prototype.getStudentID = function () {
+        return this.studentId;
+    };
     return Student;
 }(User));
 // let user1 = new User ('Emamul', 24)
@@ -126,4 +133,6 @@ var Student = /** @class */ (function (_super) {
 // user1.display();
 // Error: can't access coz userName is private. it's not accessible or modify. 
 var student1 = new Student(1201201, "Habib", 20);
-student1.display();
+student1.setStudentId(120111);
+console.log(student1.getStudentID());
+// student1.display()

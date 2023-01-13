@@ -121,6 +121,16 @@ class Student extends User {
             `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
         );
     }
+
+    // how to access or modify with private property
+    setStudentId(id: number): void{
+        this.studentId = id
+    }
+
+
+    getStudentID(): number{
+        return this.studentId
+    }
 }
 
 // let user1 = new User ('Emamul', 24)
@@ -130,5 +140,7 @@ class Student extends User {
 // Error: can't access coz userName is private. it's not accessible or modify. 
 
 let student1 = new Student(1201201, "Habib", 20);
-student1.display()
+student1.setStudentId(120111);
+console.log(student1.getStudentID());
+// student1.display()
 
