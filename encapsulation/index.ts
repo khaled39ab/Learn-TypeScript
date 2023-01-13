@@ -5,142 +5,138 @@
 
 //---------------------------------------------------------
 
-/* 
+
 // public modifier example
 
-class User {
-    public userName: string;
-    public age: number;
+class User1 {
+    public userName1: string;
+    public age1: number;
 
-    constructor(userName: string, age: number) {
-        this.userName = userName;
-        this.age = age;
+    constructor(userName1: string, age1: number) {
+        this.userName1 = userName1;
+        this.age1 = age1;
     }
 
-    display(): void {
-        console.log(`username: ${this.userName}, age: ${this.age}`);
+    display1(): void {
+        console.log(`username1: ${this.userName1}, age1: ${this.age1}`);
     }
 }
 
-class Student extends User {
-    studentId: number;
+class Student1 extends User1 {
+    studentId1: number;
 
-    constructor(studentId: number, userName: string, age: number) {
-        super(userName, age);
-        this.studentId = studentId;
+    constructor(studentId1: number, userName1: string, age1: number) {
+        super(userName1, age1);
+        this.studentId1 = studentId1;
     }
-    display(): void {
+    display1(): void {
         console.log(
-            `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
+            `username: id: ${this.studentId1}, ${this.userName1}, age: ${this.age1}`
         );
     }
 }
 
-let student1 = new Student( 1302020015, "keya", 31,);
-student1.display();
+let student1 = new Student1(1302020015, "keya", 31,);
+student1.display1();
 
-let user1 = new User ('Emamul', 24)
-user1.display();
+let user1 = new User1('Emamul', 24)
+user1.display1();
 
-*/
 
 //-------------------------------------------------------
 
-/* 
+
 // *********************  public modifier example  *******************************
-class User {
-    protected userName: string;
-    public age: number;
+class User2 {
+    protected userName2: string;
+    public age2: number;
 
-    constructor(userName: string, age: number) {
-        this.userName = userName;
-        this.age = age;
+    constructor(userName2: string, age2: number) {
+        this.userName2 = userName2;
+        this.age2 = age2;
     }
 
-    protected display(): void {
-        console.log(`username: ${this.userName}, age: ${this.age}`);
-    }
-}
-
-class Student extends User {
-    studentId: number;
-
-    constructor(studentId: number, userName: string, age: number) {
-        super(userName, age);
-        this.studentId = studentId;
-    }
-    display(): void {
-        console.log(
-            `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
-        );
+    protected display2(): void {
+        console.log(`username2: ${this.userName2}, age2: ${this.age2}`);
     }
 }
 
-let user1 = new User ('Emamul', 24)
-// user1.userName; //Error
-// user1.display();
-// Error: can't access coz userName is protected but in class or inherit object it is accessible 
+class Student2 extends User2 {
+    studentId2: number;
 
-*/
+    constructor(studentId2: number, userName2: string, age2: number) {
+        super(userName2, age2);
+        this.studentId2 = studentId2;
+    }
+    display2(): void {
+        console.log(`id: ${this.studentId2}, username2:${this.userName2}, age: ${this.age2}`);
+    }
+}
+
+let user2 = new User2('Emamul', 24)
+// user2.userName2; //Error
+// user2.display2();
+// Error: can't access coz userName2 and display2() is protected but in class or inherit object it is accessible 
+
 
 
 // *********************  private modifier example  *******************************
-class User {
-    // private userName: string;
-    public userName: string;
-    public age: number;
+class User3 {
+    // private userName3: string;
+    public userName3: string;
+    public age3: number;
 
-    constructor(userName: string, age: number) {
-        this.userName = userName;
-        this.age = age;
+    constructor(userName3: string, age3: number) {
+        this.userName3 = userName3;
+        this.age3 = age3;
     }
 
-    display(): void {
-        console.log(`username: ${this.userName}, age: ${this.age}`);
+    display3(): void {
+        console.log(`username3: ${this.userName3}, age3: ${this.age3}`);
     }
 }
 
-class Student extends User {
-    private studentId: number;
+class Student3 extends User3 {
+    private studentId3: number;
 
-    constructor(studentId: number, userName: string, age: number) {
-        super(userName, age);
-        this.studentId = studentId;
+    constructor(studentId3: number, userName3: string, age3: number) {
+        super(userName3, age3);
+        this.studentId3 = studentId3;
     }
     //(If userName is private)
 
-    // display(): void {
+    // display3(): void {
     //     console.log(
-    //         `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
+    //         `id3: ${this.studentId3}, username3: ${this.userName3}, age3: ${this.age3}`
     //     );
     // }
-    // Error: coz display method is private. It's not accessible even extends class
+    // Error: coz display3 method is private. It's not accessible even extends class
 
-    display(): void {
+    display3(): void {
         console.log(
-            `username: id: ${this.studentId}, ${this.userName}, age: ${this.age}`
+            `id3: ${this.studentId3}, username3: ${this.userName3}, age3: ${this.age3}`
         );
     }
 
     // how to access or modify with private property
-    setStudentId(id: number): void{
-        this.studentId = id
+    setStudentId3(id3: number): void {
+        this.studentId3 = id3
     }
 
 
-    getStudentID(): number{
-        return this.studentId
+    getStudentId3(): number {
+        return this.studentId3
     }
 }
 
-// let user1 = new User ('Emamul', 24)
-// user1.userName; //Error
-// user1.display();
+// let user3 = new User3 ('Emamul', 24)
+// user3.userName3; //Error
+// user3.display3();
 
 // Error: can't access coz userName is private. it's not accessible or modify. 
 
-let student1 = new Student(1201201, "Habib", 20);
-student1.setStudentId(120111);
-console.log(student1.getStudentID());
-// student1.display()
+let student3 = new Student3(1201201, "Habib", 20);
+student3.setStudentId3(120111);
+console.log(student3.getStudentId3());
+student3.display3();
 
