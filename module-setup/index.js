@@ -5,8 +5,12 @@ let studentId: number = 12123;
 let studentName: string = 'Abir';
 let studentAge: number = 23;
 */
+// import { studentId, studentName, studentAge, studentInfo } from "./Student";
 var Student_1 = require("./Student");
-function studentInfo() {
-    console.log("Id: ".concat(Student_1.studentId, ", Name: ").concat(Student_1.studentName, ", Age: ").concat(Student_1.studentAge));
+/*
+function studentInfo(): void{
+    console.log(`Id: ${studentId}, Name: ${studentName}, Age: ${studentAge}`);
 }
-studentInfo();
+*/
+// studentInfo();
+(0, Student_1.studentInfo)();
