@@ -9,3 +9,8 @@ h2, form{
 div{
     margin: 1rem;
 }
+
+input{
+    width: 12rem;
+    border: 1px solid gray;
+}
