@@ -1,3 +1,11 @@
 *{
     background-color: rgb(183, 218, 206);
 }
+
+h2, form{
+    text-align: center;
+}
+
+div{
+    margin: 1rem;
+}
