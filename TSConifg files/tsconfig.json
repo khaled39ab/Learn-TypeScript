@@ -101,5 +101,6 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": ["../TSConifg files/src"],
-  "files": ["../TSConifg files/src/index.ts"]
+  "files": ["../TSConifg files/src/index.ts", "../TSConifg files/src/app.ts"]
+  // this is must added files
 }
