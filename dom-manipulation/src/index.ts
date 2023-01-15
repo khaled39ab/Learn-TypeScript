@@ -6,9 +6,9 @@ const userEmailInput = document.querySelector("#email") as HTMLInputElement;
 
 const userFeedbackInput = document.querySelector("#feedback") as HTMLSelectElement;
 
-const userCountryInput = document.querySelector("#country") as HTMLSelectElement;
+const userCountryInput = document.querySelector("#country") as HTMLTextAreaElement;
 
-form.addEventListener("submit", (e)=>{
+form.addEventListener("submit", (e: Event) => {
     e.preventDefault();
     let userData = {
         username: userNameInput.value,

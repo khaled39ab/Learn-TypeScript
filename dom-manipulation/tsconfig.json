@@ -100,5 +100,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["../dom-manipulation/src"]
+  "include": ["../dom-manipulation/src"],
+  "files": ["../dom-manipulation/src/index.ts"]
 }
