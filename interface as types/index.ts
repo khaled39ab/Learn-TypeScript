@@ -38,7 +38,7 @@ users.forEach(user => displayUser(user))
 */
 
 // -------------------   with interface as types -------------------
-interface IUser {  // "I" for interface as marked. not mandatory  
+interface IUser {  // "I" for interface as mark. not mandatory  
     id: number,
     name: string,
     age: number
