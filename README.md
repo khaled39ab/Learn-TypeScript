@@ -4,14 +4,14 @@
 # **Introduction to TypeScript**
 
 ## *What is TypeScript?*
-*programming language developed by microsoft
-*superset of JavaScript
+* programming language developed by microsoft
+* superset of JavaScript
 
 ## *Why TypeScript?*
-*adds static typing to JavaScript
-*it helps to see bugs when writing codes; easy to find and fix bugs
-*gives auto suggestion
-*provides better documentation
+* adds static typing to JavaScript
+* it helps to see bugs when writing codes; easy to find and fix bugs
+* gives auto suggestion
+* provides better documentation
 
 ## props types
 * built-in data type props
