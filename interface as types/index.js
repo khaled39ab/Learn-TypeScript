@@ -1,3 +1,4 @@
+//-------------- basic typescript ----------------
 var users = [];
 var user1 = {
     id: 101,
@@ -11,4 +12,7 @@ var user2 = {
 };
 users.push(user1);
 users.push(user2);
-console.log(users);
+var displayUser = function (user) {
+    console.log("Id: ".concat(user.id, " Name: ").concat(user.name, " Age: ").concat(user.age));
+};
+users.forEach(function (user) { return displayUser(user); });

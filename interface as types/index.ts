@@ -1,3 +1,5 @@
+//-------------- basic typescript ----------------
+
 let users: {
     id: number,
     name: string,
@@ -27,4 +29,8 @@ let user2: {
 users.push(user1);
 users.push(user2);
 
-console.log(users);
+const displayUser = (user: { id: number, name: string, age: number }) => {
+    console.log(`Id: ${user.id} Name: ${user.name} Age: ${user.age}`);
+}
+
+users.forEach(user => displayUser(user))
