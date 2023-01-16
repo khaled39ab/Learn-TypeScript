@@ -14,8 +14,6 @@ var User = /** @class */ (function () {
 }());
 exports.User = User;
 var user = new User("Mr. Potato", 32);
-// console.log(user);
-console.log(user.formatUser());
 var Student = /** @class */ (function () {
     function Student(name, student_id) {
         var _this = this;
@@ -28,4 +26,4 @@ var Student = /** @class */ (function () {
     return Student;
 }());
 var stu1 = new Student("Samsul Islam", "13017");
-console.log(stu1.printDetails());
+// console.log(stu1.printDetails());

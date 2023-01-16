@@ -1,6 +1,7 @@
-//-------------- basic typescript without interface ----------------
+//-------------- typescript without interface ----------------
 
 /* 
+
 let users: {
     id: number,
     name: string,
@@ -35,9 +36,11 @@ const displayUser = (user: { id: number, name: string, age: number }) => {
 }
 
 users.forEach(user => displayUser(user))
+
 */
 
 // -------------------   with interface as types -------------------
+
 interface IUser {  // "I" for interface as mark. not mandatory  
     id: number,
     name: string,
@@ -65,4 +68,4 @@ const displayUser = (user: IUser) => {
     console.log(`Id: ${user.id} Name: ${user.name} Age: ${user.age}`);
 }
 
-users.forEach(user => displayUser(user))
+users.forEach(user => displayUser(user));

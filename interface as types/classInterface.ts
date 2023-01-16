@@ -13,7 +13,7 @@ export class User implements UserFormatter {
 
 let user = new User("Mr. Potato", 32);
 // console.log(user);
-console.log(user.formatUser());
+// console.log(user.formatUser());
 
 
 // -------------  More Example  ----------------------
@@ -40,4 +40,4 @@ class Student implements IStudent {
 }
 
 const stu1 = new Student("Samsul Islam", "13017");
-console.log(stu1.printDetails());
+// console.log(stu1.printDetails());
