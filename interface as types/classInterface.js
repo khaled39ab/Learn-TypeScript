@@ -7,7 +7,7 @@ var User = /** @class */ (function () {
         this.fullName = fullName;
         this.age = age;
         this.formatUser = function () {
-            return "name: ".concat(_this.fullName, ", age: ").concat(_this.age);
+            return "Name: ".concat(_this.fullName, ", Age: ").concat(_this.age);
         };
     }
     return User;
@@ -16,3 +16,16 @@ exports.User = User;
 var user = new User("Mr. Potato", 32);
 // console.log(user);
 console.log(user.formatUser());
+var Student = /** @class */ (function () {
+    function Student(name, student_id) {
+        var _this = this;
+        this.printDetails = function () {
+            return "Name: ".concat(_this.name, ", ID: ").concat(_this.student_id);
+        };
+        this.name = name;
+        this.student_id = student_id;
+    }
+    return Student;
+}());
+var stu1 = new Student("Samsul Islam", "13017");
+console.log(stu1.printDetails());
