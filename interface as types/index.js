@@ -1,4 +1,4 @@
-//-------------- basic typescript ----------------
+//-------------- basic typescript without interface ----------------
 var users = [];
 var user1 = {
     id: 101,
